@@ -1,0 +1,23 @@
+{
+  "name": "ctrlr",
+  "version": "1.0.0",
+  "description": "multidevice remote control with web sockets",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/abraxasrex/ctrlr"
+  },
+  "keywords": [
+    "socket",
+    "node"
+  ],
+  "author": "jonathan reasor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.4.8"
+  }
+}
