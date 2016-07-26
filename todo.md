@@ -6,3 +6,9 @@
 3. css preprocessor for multiple styles  
 
 4. authentication to connect controller to window  
+
+5. prevent phone zoom  
+
+stretch:
+
+1. socket.io => ws 
