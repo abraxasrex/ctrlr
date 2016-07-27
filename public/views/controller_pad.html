@@ -2,26 +2,32 @@
 <html>
   <head>
     <title>Ctrlr.io</title>
-      <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="manifest" href="manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
+    <!-- <link rel="manifest" href="manifest.json"> -->
     <link href ="../stylesheets/controller_pad.css" rel="stylesheet">
     <script src="/socket.io/socket.io.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
   </head>
   <body>
   <header>
-    <h1> Controller Pad </h1>
+    <h1> Ctrlr </h1>
   </header>
   <main>
     <div class= "direction-pad">
+      <div></div>
       <button class="btn-up"> Up </button>
-      <button class="btn-right"> Right </button>
-      <button class="btn-down"> Down </button>
+      <div></div>
       <button class="btn-left"> Left </button>
+      <div></div>
+      <button class="btn-right"> Right </button>
+      <div></div>
+      <button class="btn-down"> Down </button>
+      <div></div>
     </div>
-
-    <button class= "letter-button a-button">A</button>
-    <button class= "letter-button b-button">B</button>
+    <div class= "button-pad">
+      <button class= "letter-button b-button">B</button>
+      <button class= "letter-button a-button">A</button>
+    </div>
   </main>
 
     <script src="../js/controller_pad.js"></script>

@@ -1,6 +1,27 @@
+@media all and (orientation: portrait) {
+  .direction-pad {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  .button-pad {
+    width: 100%;
+  }
+}
+
+@media all and (orientation: landscape) {
+  .direction-pad {
+    width: 50%;
+  }
+  .button-pad {
+    width: 37.5%;
+    margin-left: 5%;
+  }
+}
 
 main {
   width: 100%;
+  min-height: 350px;
+  display: block;
 }
 
 .direction-pad, .letter-button {
@@ -9,43 +30,36 @@ main {
 
 .direction-pad {
   float: left;
-  width: 50%;
-  height: 500px;
+  min-height: 250px;
+  max-height: 500px;
   background-color: grey;
-  position: relative;
-  margin-bottom: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.button-pad{
+  float: left;
 }
 
 .direction-pad button {
-  position: absolute;
-  border: solid 0.5px red;
-  height: 125px;
-  width: 125px;
   z-index: 1;
   background-color: yellow;
   font-size: 32px;
 }
 
-.btn-up {
-  top: 10%;
-  left: 40%;
-}
-.btn-right {
-  top: 45%;
-  left: 75%;
-}
-.btn-down {
-  top: 75%;
-  left: 40%;
-}
-.btn-left {
-  top: 45%;
-  left: 10%;
+.direction-pad > * {
+  min-height:50px;
+  width: 33%;
 }
 
 .letter-button {
+  margin: 0;
+  padding: 0;
   height: 200px;
-  width: 25%;
+  width: 50%;
   float: right;
   font-size: 36px;
 }

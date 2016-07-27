@@ -5,7 +5,7 @@ main {
   position: absolute;
 }
 
-img {
+.sprite {
   width: 300px;
   height: 300px;
   position: absolute;
